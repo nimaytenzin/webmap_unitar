@@ -1,0 +1,44 @@
+body{
+    height: 100dvh;
+    width: 100dvw;
+}
+
+#viewDiv{
+    width: 100%;
+    height: 100%;
+}
+
+
+    .calcite-mode-light {
+      color-scheme: light;
+      --calcite-mode-name: light;
+      --calcite-color-brand: #7AADA6;
+      --calcite-color-brand-hover: #5A918A;
+      --calcite-color-brand-press: #446D68;
+      --calcite-color-text-1: #151515;
+      --calcite-color-text-2: #161616;
+      --calcite-color-text-3: #191919;
+      --calcite-ui-text-highlight: #7AADA6;
+      --calcite-color-text-inverse: #ffffff;
+      --calcite-color-text-link: #5A918A;
+      --calcite-link-blue-underline: rgba(122, 173, 166, 0.5);
+      --calcite-color-background: #F7F7F7;
+      --calcite-color-foreground-1: #FFFFFF;
+      --calcite-color-foreground-2: #F2F2F2;
+      --calcite-color-foreground-3: #EDEDED;
+      --calcite-color-inverse: #000000;
+      --calcite-color-inverse-hover: #000000;
+      --calcite-color-inverse-press: #000000;
+      --calcite-color-border-1: #CACACA;
+      --calcite-color-border-2: #D4D4D4;
+      --calcite-color-border-3: #DFDFDF;
+      --calcite-color-border-input: #959595;
+      --calcite-ui-icon-color: currentColor;
+      --calcite-color-status-info: #5A918A;
+      --calcite-color-status-success: #308e29;
+      --calcite-color-status-warning: #f1c21b;
+      --calcite-color-status-danger: #D83020;
+      --calcite-color-status-danger-hover: #A82B1E;
+      --calcite-color-status-danger-press: #7C1D13;
+    }
+  

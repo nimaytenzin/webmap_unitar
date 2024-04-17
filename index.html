@@ -1,0 +1,95 @@
+<html html>
+  <link lang="en">
+    <meta charset="utf-8" />
+    <title>Zhichar</title>
+    <script
+      type="module"
+      src="https://js.arcgis.com/calcite-components/2.7.1/calcite.esm.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://js.arcgis.com/calcite-components/2.7.1/calcite.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.29/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.29/"></script>
+
+    <script src="script.js"></script>
+     <link rel="stylesheet" href="style.css" />
+  </link>
+
+  <body class="calcite-mode-light">
+    <calcite-shell>
+      <calcite-navigation slot="header">
+        <calcite-action slot="navigation-action" compact>
+          <img
+            src="https://zhichar.bt/assets/logo.png"
+            style="width: 50px; height: auto"
+            alt="NLCS logo"
+          />
+        </calcite-action>
+        <calcite-navigation-logo
+          slot="logo"
+          heading="Buildings and plots"
+          description="copyright zhichar.bt"
+        >
+        </calcite-navigation-logo>
+
+        <calcite-action
+          slot="content-end"
+          id="app-details-action"
+          appearance="transparent"
+          scale="m"
+          text="app details"
+          icon="information"
+        >
+        </calcite-action>
+      </calcite-navigation>
+      <calcite-shell-panel slot="panel-start" collapsible>
+        <calcite-block
+          collapsible
+          open
+          heading="Select Town"
+          description="Select and load data"
+        >
+          <calcite-dropdown width="m" id="townselector">
+            <calcite-button slot="trigger">Select Town</calcite-button>
+            <calcite-dropdown-group group-title="Towns">
+              <calcite-dropdown-item label="448">
+                Gyalposhing</calcite-dropdown-item
+              >
+              <calcite-dropdown-item label="317"
+                >Drametse
+              </calcite-dropdown-item>
+            </calcite-dropdown-group>
+          </calcite-dropdown>
+        </calcite-block>
+      </calcite-shell-panel>
+      <calcite-panel>
+        <div id="viewDiv"></div>
+      </calcite-panel>
+
+      <calcite-modal id="app-details-modal">
+        <h3 slot="header">Welcome</h3>
+        <div slot="content">
+          <calcite-label>
+            Welcome to Thimphu Map, your comprehensive guide to the heart of
+            Bhutan's capital! Explore the intricate layers of Thimphu's
+            infrastructure with ease. From roads to landmarks, our application
+            provides you with essential insights to navigate the city
+            seamlessly. Let's embark on a journey through Thimphu's vibrant
+            streets together!
+          </calcite-label>
+        </div>
+        <div slot="back">
+          <calcite-label layout="inline">
+            United Nations Satellite Centre (UNOSAT)
+          </calcite-label>
+        </div>
+      </calcite-modal>
+    </calcite-shell>
+  </body>
+</html>
